@@ -1,14 +1,15 @@
 "use client";
 
+import { CategoryType } from "@/types";
 import React from "react";
 
-const Category = () => {
+const Category = ({ cat }: { cat: CategoryType }) => {
   return (
     <div
       onClick={() => { }}
       className="bg-amber-300 p-4 rounded-lg shadow-md cursor-pointer"
     >
-      Title
+      {cat?.Title}
     </div>
   )
 }
