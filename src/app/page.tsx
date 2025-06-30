@@ -5,7 +5,7 @@ import { BlogType, CategoryType } from "@/types";
 const fetchCategories = async (): Promise<CategoryType[]> => {
   const options = {
     headers: {
-      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
     },
   };
 
@@ -22,7 +22,7 @@ const fetchCategories = async (): Promise<CategoryType[]> => {
 const fetchBlogs = async (): Promise<BlogType[]> => {
   const options = {
     headers: {
-      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
     },
   };
 

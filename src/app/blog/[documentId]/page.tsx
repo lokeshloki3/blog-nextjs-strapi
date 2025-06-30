@@ -5,7 +5,7 @@ import React from 'react';
 const fetchBlogs = async (documentId: string) => {
   const options = {
     headers: {
-      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
     },
   };
 
