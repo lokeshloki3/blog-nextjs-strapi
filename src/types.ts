@@ -8,7 +8,7 @@ export type CategoryType = {
 
 export type BlogType = {
   id: number;
-  documentId: string,
+  documentId: string;
   Title: string;
   Description: {
     type: string;
@@ -22,4 +22,7 @@ export type BlogType = {
     url: string;
     name: string;
   };
+  categories: {
+    Title: string;
+  }[];
 };
