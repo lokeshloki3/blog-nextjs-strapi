@@ -4,13 +4,14 @@ import Link from 'next/link'
 import React from 'react'
 
 const BlogCard = ({ blog }: { blog: BlogType }) => {
-  const description = blog.Description?.[0]?.children?.[0]?.text ?? "No description available";
+  const description = blog.Description?.[0]?.children?.[0]?.text;
   const TuncateBlogDesc = description.length > 80 ? description.substring(0, 80) + "..." : description;
 
+  console.log(blog.id)
   const imgUrl = "http://127.0.0.1:1337" + blog.img.url;
   return (
     <div className='rounded-lg shadow-md p-4 mb-4 overflow-hidden border border-b-gray-600 cursor-pointer'>
-      <Link href={`/blog/${blog.id}`}>
+      <Link href={`/blog/${blog.documentId}`}>
         <div className='relative w-full h-1' style={{ paddingBottom: "100%" }}>
           <Image
             src={imgUrl}

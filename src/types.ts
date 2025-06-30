@@ -8,6 +8,7 @@ export type CategoryType = {
 
 export type BlogType = {
   id: number;
+  documentId: string,
   Title: string;
   Description: {
     type: string;
