@@ -54,7 +54,7 @@ const BlogCard = ({ blog }: { blog: BlogType }) => {
       <div className='flex justify-end'>
         <button
           onClick={handleDelete}
-          className='mt-2 px-4 py-1 bg-amber-400 text-white rounded'
+          className='mt-2 px-4 py-1 bg-amber-400 text-white rounded cursor-pointer'
         >
           Delete
         </button>
