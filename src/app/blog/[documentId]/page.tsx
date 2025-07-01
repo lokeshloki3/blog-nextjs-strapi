@@ -27,16 +27,20 @@ const Page = async ({ params }: { params: { documentId: string } }) => {
   const imgUrl = blog.img?.url ? `http://127.0.0.1:1337${blog.img.url}` : '';
 
   return (
-    <div className='max-w-3xl mx-auto p-4'>
-      <Link href="/">{"< Back"}</Link>
+    <div className='w-full mx-auto p-4'>
+      <Link href="/">
+        <div className='bg-amber-400 text-white px-4 py-2 rounded w-fit'>
+          Back
+        </div>
+      </Link>
 
       <div className='relative w-full h-96 overflow-hidden rounded-lg mt-5'>
         {imgUrl && (
           <Image
             src={imgUrl}
             alt={blog.img?.name || blog.Title}
-            layout='fill'
-            objectFit='cover'
+            fill
+            className='rounded-t-lg object-cover'
           />
         )}
       </div>

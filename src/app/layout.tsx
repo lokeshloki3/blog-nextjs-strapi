@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CategoryProvider } from "@/context/CategoryContext";
+import { BlogProvider } from "@/context/BlogContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,11 @@ export default function RootLayout({
       >
         <div className="mx-auto max-w-screen-lg">
           <CategoryProvider>
-            <div className="flex min-h-screen flex-col items-center p-24">
-              {children}
-            </div>
+            <BlogProvider>
+              <div className="flex min-h-screen flex-col items-center p-24">
+                {children}
+              </div>
+            </BlogProvider>
           </CategoryProvider>
         </div>
       </body>
