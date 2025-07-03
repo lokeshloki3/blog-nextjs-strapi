@@ -44,7 +44,7 @@ export default async function Home() {
     <div>
       <div className="flex justify-end">
         <Link href="/newblog">
-          <div className="p-2 bg-amber-400 text-white rounded-lg cursor-pointer hover:bg-amber-500 transition">
+          <div className="p-2 bg-amber-800 text-white rounded-lg cursor-pointer hover:bg-amber-500 transition">
             Create New Blog
           </div>
         </Link>

@@ -29,7 +29,7 @@ const Page = async ({ params }: { params: { documentId: string } }) => {
   return (
     <div className='w-full mx-auto p-4'>
       <Link href="/">
-        <div className='bg-amber-400 text-white px-4 py-2 rounded w-fit'>
+        <div className='bg-amber-800 text-white px-4 py-2 rounded w-fit'>
           Back
         </div>
       </Link>

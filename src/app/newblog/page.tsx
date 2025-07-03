@@ -62,7 +62,7 @@ const Page = () => {
   return (
     <div className="max-w-xl mx-auto mt-10">
       <Link href="/">
-        <div className='bg-amber-400 text-white px-4 py-2 rounded w-fit'>
+        <div className='bg-amber-800 text-white px-4 py-2 rounded w-fit'>
           Back
         </div>
       </Link>

@@ -12,8 +12,8 @@ const Category = ({ cat }: { cat: CategoryType }) => {
       onClick={() => changeCategory(cat.Title)}
       className={`${cat.Title === category
         ? "bg-white text-black"
-        : "bg-amber-400"
-        }  p-4 rounded-lg shadow-md cursor-pointer`}
+        : "bg-amber-800"
+        }  p-4 rounded-lg shadow-md cursor-pointer flex justify-center items-center`}
     >
       {cat?.Title}
     </div>
